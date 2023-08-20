@@ -1,0 +1,181 @@
+<!-- Solution Cards -->
+<div style="background-color: rgb(158, 224, 224); padding: 60px; border-radius: 5px; border: 4px solid black">
+    <h3 style="text-align: center; color: purple; font-weight: bold;">Our Solutions</h3>
+ 
+    <br>
+    <!-- ngFor Trial -->
+    <div class="row gap-3" style="text-align: center; justify-content: center;">
+        <div *ngFor="let solution of solutions" class="card" [ngStyle]="{ fontSize: browserScreenWidth <= 628 ? '12px' : '15px' }" style="width: 14rem; border: 3px solid rgb(87, 87, 87); height: 528px;">
+
+            <img style="margin-top: 20px" height="260px" src="{{ solution.image }}" class="card-img-top" alt="...">
+
+            <div class="card-body">
+
+                <h5 class="card-title">{{ solution.title }}</h5>
+                <!-- <p style="font-weight: bold;">
+                    {{ solution.title }}
+                </p> -->
+                <p class="card-text">
+                   {{ solution.description }}
+                </p>
+
+            </div>
+        </div>
+    </div>
+ 
+</div>
+ 
+<br>
+
+<!-- Training & Education Services -->
+<div class="container" style="background-color: rgb(158, 224, 224); border: 3px solid black; border-radius: 5px;">
+ 
+    <br>
+    <h3 style="text-align: center; color: purple; font-weight: bold;">Training & Education</h3>
+ 
+    <div class="container-fluid" style="top: 160px; left: 160px; position: static;">
+        <div style="height: auto; margin: 0 auto; padding: 10px; position: relative; text-align: center; width: 60%;">
+            <p [ngStyle]="{ fontSize: browserScreenWidth <= 992 ? '15px' : '24px' }" style="text-align: center;">
+                Training and education services to help your team acquire the skills and knowledge necessary to succeed.
+            </p>
+        </div>
+    </div>
+ 
+    <div class="container text-center" style="background-color: white; border: 2px solid black; border-radius: 2px;">
+ 
+        <br>
+        <div class="row" [ngStyle]="{ fontSize: browserScreenWidth <= 992 ? '9px' : '15px' }">
+ 
+            <div class="col">
+                <label style="font-weight: bold;">Workshop</label>
+ 
+                <br>
+ 
+                <button style="margin-top: 5px; border: none; background-color: white; text-decoration-line: underline;">
+                   Busniess Lifestyle with Microsoft 365
+                </button>
+ 
+                <button style="margin-top: 12px; border: none; background-color: white; text-decoration-line: underline;">
+                   Active Directory Troubleshooting: Troubleshoot AD in 1 Day
+                </button>
+ 
+                <button style="margin-top: 12px; border: none; background-color: white; text-decoration-line: underline;">
+                   Azure Modern Monitoring & Management: Log Analytics to PowerBI
+                </button>
+ 
+                <button style="margin-top: 12px; border: none; background-color: white; text-decoration-line: underline;">
+                   PFEMARINE Cloud Armor Workshop
+                </button>
+
+            </div>
+ 
+            <!-- Fix font size when resized -->
+            <div class="col-1">
+                <label style="font-weight: bold;">Price</label>
+ 
+                <p>
+                   $18,000
+                </p>
+ 
+                <p>
+                   $12,000
+                </p>
+ 
+                <p>
+                   $36,000
+                </p>
+ 
+                <p>
+                   $40,000
+                </p>
+            </div>
+ 
+            <div class="col">
+                <label style="font-weight: bold;">Duration of Workshops</label>
+ 
+                <p>
+                   3 Days<br>(20 people max)
+                </p>
+ 
+                <p>
+                   1 Day<br>(20 people max)
+                </p>
+ 
+                <p>
+                   5 Days<br>(20 people max)
+                </p>
+ 
+                <p>
+                   6 Days<br>(20 people max)
+                </p>
+
+            </div>
+ 
+        </div>
+        <br>
+
+    </div>
+
+    <br>
+    <div class="container">
+        <p [ngStyle]="{ fontSize: browserScreenWidth <= 768 ? '12px' : '18px' }" style="text-align: center;">
+           *Prices reflect actual value, without discounts.*
+        </p>
+    </div>
+ 
+</div>
+ 
+ <br>
+ 
+ <!-- Pricing Tiers -->
+ <div class="container" style="background-color: rgb(158, 224, 224); border: 3px solid rgb(87, 87, 87); border-radius: 5px;">
+ 
+    <br>
+    <h3 style="text-align: center; color: purple; font-weight: bold;">Pricing Tiers</h3>
+ 
+    <div class="container text-center" [ngStyle]="{ fontSize: browserScreenWidth <=  768 ? '12px' : '20px' }" style="background-color: white; border: 2px solid black;">
+       
+       <br>
+       <div class="row">
+ 
+          <div class="col">
+             <label style="font-weight: bold;">Enterprise</label>
+ 
+             <p>
+                Discounts starting at 5%
+                <br>
+                up to 20%*
+             </p>
+             
+          </div>
+ 
+          <div class="col">
+             <label style="font-weight: bold;">Small-Business</label>
+ 
+             <p>
+                Discounts starting at 15%
+                <br>
+                up to 30%*
+             </p>
+ 
+          </div>
+ 
+          <div class="col">
+             <label style="font-weight: bold;">Startup</label>
+ 
+             <p>
+                Discounts starting at 25%
+                <br>
+                up to 45%*
+             </p>
+ 
+          </div>
+ 
+       </div>
+    </div>
+ 
+    <br>
+ 
+    <p [ngStyle]="{ fontSize: browserScreenWidth <= 768 ? '12px' : '20px' }" style="text-align: center;">*Discounts applied for consulting rate, workshops, and offerings.</p>
+ 
+ </div>
